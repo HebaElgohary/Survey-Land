@@ -2,6 +2,9 @@ import { Button } from '@/components/ui/button';
 import { NavLink } from 'react-router-dom';
 import { Eye, EyeOff, LockKeyhole, Mail, UserRound } from 'lucide-react';
 import { useState } from 'react';
+import rafiki from "@/assets/png/rafiki.png";
+import logo from "@/assets/svg/logo.svg"
+
 const Login = () => {
   const [form, setForm] = useState({
     email: '',
@@ -79,7 +82,7 @@ const Login = () => {
       <div className="flex flex-col items-center gap-4 m-auto w-full  lg:w-[50%]">
         <div className="flex flex-row items-center gap-2">
           <img
-            src="src\assets\svg\logo.svg"
+            src={logo}
             alt="Survey Infinity"
             className="w-28 lg:w-36 mx-auto mb-6"
           />
@@ -157,7 +160,7 @@ const Login = () => {
           Welcome <br></br> Back ...
         </h1>
         <img
-          src="src\assets\png\rafiki.png"
+           src={rafiki}
           alt="rafiki image"
           className="absolute right-0 bottom-0 w-56"
         />

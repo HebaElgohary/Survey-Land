@@ -3,6 +3,8 @@ import { Menu } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import LanguageToggle from '../ui/LanguageToggle';
 import ThemeToggle from '../ui/ThemeToggle';
+import logo from "@/assets/svg/logo.svg"
+
 
 import {
   DropdownMenu,
@@ -32,7 +34,7 @@ const Header = () => {
           <Link to="/">
             <div className="flex flex-row items-center gap-2 mt-6">
           <img
-            src="src\assets\svg\logo.svg"
+            src={logo}
             alt="Survey Infinity"
             className="w-12 lg:w-16 mx-auto mb-6"
           />
