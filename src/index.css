@@ -10,6 +10,11 @@ body {
   :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.2153 0.117853 295.5783);
+    --home: linear-gradient(
+    to right,
+    oklch(0.935 0.028 253.5),   /* Tailwind blue-50  */
+    oklch(0.895 0.055 265.2)    /* Tailwind indigo-100 */
+  );
 
     --card: oklch(0.9821 0 0);
     --card-foreground: oklch(0.9395 0.0177 328.5);
@@ -20,10 +25,10 @@ body {
     --primary: oklch(0.4839 0.2625413466109697 288.0228952330357);
     --primary-foreground: oklch(0.3582 0.1829 295.26);
 
-    --secondary: oklch(0.551 0.0234 264.36);
-    --secondary-foreground: oklch(0.5071 0.2701 293.4 / 12.16%);
+    --secondary:  oklch(39.512% 0.19204 296.528 / 0.87);
+    --secondary-foreground: oklch(90.743% 0.00752 311.782 / 0.851);
 
-    --accent: oklch(0.5658 0 0);
+    --accent: oklch(69.39% 0.01055 17.001);
     --accent-foreground: oklch(0.9521 0 0);
 
     --destructive: oklch(0.9842 0.0101 311.18);
@@ -33,8 +38,9 @@ body {
     --input: oklch(0.8047 0 0);
     --ring: oklch(0.4839 0.2625413466109697 288.0228952330357);
 
-    --muted: oklch(1 0 0);
+    --muted: oklch(52.186% 0.00628 16.839);
     --succsess: oklch(0.7069 0.1511 163.06);
+    --danger: oklch(51.486% 0.20864 27.614);
     --main: oklch(0 0 0);
 
     --radius: 0.5rem;
@@ -52,6 +58,11 @@ body {
   .dark {
   --background: hsl(222.2 84% 4.9%);
   --foreground: hsl(210 40% 98%);
+  --home:linear-gradient(
+    to right,
+    oklch(0.282 0.091 267.935), /* Tailwind blue-950   */
+    oklch(0.257 0.090 281.288)  /* Tailwind indigo-950 */
+  );
 
   --card: hsl(222.2 84% 4.9%);
   --card-foreground: hsl(210 40% 98%);
@@ -59,17 +70,20 @@ body {
   --popover: hsl(222.2 84% 4.9%);
   --popover-foreground: hsl(210 40% 98%);
 
-  --primary: hsl(210 40% 98%);
-  --primary-foreground: hsl(222.2 47.4% 11.2%);
+  --primary: hsl(269, 72%, 64%);
+  --primary-foreground: hsl(280, 59%, 82%);
 
-  --secondary: hsl(217.2 32.6% 17.5%);
-  --secondary-foreground: hsl(210 40% 98%);
+  --secondary: hsl(273, 33%, 95%);
+  --secondary-foreground: hsl(287, 79%, 87%);
 
-  --muted: hsl(217.2 32.6% 17.5%);
+  --muted: hsl(270, 6%, 53%);
   --muted-foreground: hsl(215 20.2% 65.1%);
 
-  --accent: hsl(217.2 32.6% 17.5%);
+  --accent: hsl(280, 31%, 83%);
   --accent-foreground: hsl(210 40% 98%);
+
+      --danger: oklch(90.387% 0.19795 111.038);
+
 
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(210 40% 98%);
@@ -128,7 +142,7 @@ body {
 }
 
 .not-active {
-  color: var(--primary);
+  color: var(--secondary);
   transition: 0.2s;
 }
 

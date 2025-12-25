@@ -1,11 +1,10 @@
 
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+
 import HeroSection from "@/components/home/HeroSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-home">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center">
           <HeroSection/>

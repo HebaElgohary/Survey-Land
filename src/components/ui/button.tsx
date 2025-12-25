@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
-import type { ReactNode } from "react"
+// import type { ReactNode } from "react"
 
 
 
@@ -18,7 +18,7 @@ const buttonVariants = cva(
         ghost: "text-primary font-semibold hover:bg-border  active:scale-[0.95]",
         link: "font-semibold underline-offset-4 hover:underline text-primary hover:bg-border active:bg-border active:scale-[0.95]",
         success: "bg-success text-background  active:scale-[0.95] font-semibold",
-
+        danger:"bg-danger text-background active:scale-[0.95] font-semibold "
 
 
 

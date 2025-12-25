@@ -19,26 +19,26 @@ const FaqsItem: React.FC<FaqsItemProps> = ({ item, isOpen, onToggle }) => {
   }, [isOpen]);
 
   return (
-    <div className="border-b border-border last:border-b-0">
+    <div className="border-b border-border last:border-b-0 ">
       <button
         className="w-full flex justify-between items-center py-6 text-left"
         onClick={() => onToggle(item.id)}
         aria-expanded={isOpen}
       >
-        <span className="font-semibold text-lg">
+        <span className="font-semibold text-lg ">
           {item.question}
         </span>
-        <span className="text-border">
+        <span className="text-secondary">
           {isOpen ? <Minus size={20} /> : <Plus size={20} />}
         </span>
       </button>
 
       <div
         ref={contentRef}
-        className="overflow-hidden transition-all duration-300"
+        className="overflow-hidden transition-all duration-300 "
         style={{ height: `${height}px` }}
       >
-        <div className="pb-6 text-border">{item.answer}</div>
+        <div className="pb-6  text-muted">{item.answer}</div>
       </div>
     </div>
   );

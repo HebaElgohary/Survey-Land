@@ -9,10 +9,10 @@ interface SurveyCategoryCardProps{
 }
 export  function SurveyCategoryCard({icon,category,num}:SurveyCategoryCardProps) {
   return (
-    <div   className='bg-[#F3F3F3] p-3  rounded-xl'>
+    <div   className='bg-secondary-foreground p-3  rounded-xl'>
       <div className='flex items-start gap-2 my-4'> 
       <div>{icon}</div>   
-      <div className='font-semibold  text-lg'>
+      <div className='font-semibold  text-lg text-muted'>
           {category}
         </div>
       </div >

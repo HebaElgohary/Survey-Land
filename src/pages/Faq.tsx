@@ -9,7 +9,7 @@ const Faq: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-center mb-16 gap-12">
           <div className="lg:w-1/2 space-y-6">
             <h1 className="text-4xl font-bold text-primary">FAQs</h1>
-            <p className="text-lg text-secondary max-w-md">
+            <p className="text-lg text-secondary max-w-md ">
               Have questions about creating surveys, quizzes, or collecting
               responses? We've got answers! Below are some common questions and
               helpful responses to get you started with Survey Infinity.

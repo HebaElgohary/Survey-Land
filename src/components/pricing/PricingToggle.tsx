@@ -12,7 +12,7 @@ export function PricingToggle({ isAnnual, onToggle, className }: PricingTogglePr
       <div 
         role="radiogroup" 
         aria-label="Billing cycle" 
-        className="inline-flex items-center rounded-full border border-gray-300 p-1 bg-gray-100"
+        className="inline-flex items-center rounded-full border border-muted p-1"
       >
         <button
           type="button"

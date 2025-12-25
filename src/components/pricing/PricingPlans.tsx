@@ -64,10 +64,10 @@ export function PricingPlans() {
   return (
     <div className="w-full py-8 sm:py-12">
       <div className="text-center mb-8 sm:mb-12">
-        <h2 className="text-lg font-bold  text-gray-600 max-w-2xl mx-auto px-4">
+        <h2 className="text-lg font-bold  text-secondary max-w-2xl mx-auto px-4">
           Choose your perfect 
         </h2>
-        <p className="text-lg   text-gray-600 max-w-2xl mx-auto px-4">
+        <p className="text-lg   text-muted max-w-2xl mx-auto px-4">
           Choose the perfect plan for your needs. Whether you're just starting out or running a large organization, we've got you covered.
         </p>
         
@@ -92,7 +92,7 @@ export function PricingPlans() {
 
       {/* Guarantee banner */}
       <div className="mt-12 max-w-2xl mx-auto px-4">
-        <div className="flex items-center justify-center rounded-full bg-gray-100 px-6 py-3 text-sm text-gray-700">
+        <div className="flex items-center justify-center rounded-full bg-muted px-6 py-3 text-sm text-secondary">
           <Shield className="h-5 w-5 mr-2 text-green-600 flex-shrink-0" />
           <span className="font-medium">30-day money-back guarantee</span>
         </div>

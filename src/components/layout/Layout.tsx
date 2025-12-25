@@ -2,9 +2,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import Faq from "@/pages/Faq";
-import Contact from "@/pages/Contact";
-import DashBoard from "../ui/DashBoard";
+
 
 const Layout = () => {
   return (

@@ -42,7 +42,7 @@ const Header = () => {
         </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8 text-secondary">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? 'active' : 'not-active')}
@@ -102,7 +102,7 @@ const Header = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className=" flex flex-col items-start p-4 mt-1 bg-background text-primary shadow-shadow">
-                <nav className="flex flex-col gap-3 w-48 h-[75vh] p-2 ">
+                <nav className="flex flex-col gap-3 w-48 h-[75vh] p-2 text-secondary ">
                   <DropdownMenuItem>
                     <NavLink to="/">Home</NavLink>
                   </DropdownMenuItem>

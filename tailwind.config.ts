@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 export default {
   darkMode: ['class'],
@@ -21,6 +22,7 @@ export default {
       colors: {
         border: 'var(--border)',
         succsess: 'var(--succsess)',
+        danger:'var(--danger)',
         muted: 'var(--muted)',
         main: 'var(--main)',
         input: 'var(--input)',
@@ -91,7 +93,6 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
-  },
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  plugins: [require('tailwindcss-animate')],
+  plugins: [tailwindcssAnimate],
+} 
 } satisfies Config;
