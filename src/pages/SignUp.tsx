@@ -2,9 +2,10 @@ import { Button } from '@/components/ui/button';
 import { NavLink } from 'react-router-dom';
 import { Eye, EyeOff, LockKeyhole, Mail, UserRound } from 'lucide-react';
 import { useState } from 'react';
-import logo from "@/assets/svg/logo.svg"
-import signup from "@/assets/png/rafiki.png"
-import icons from "@/assets/png/signupIcons.png"
+import logo from '@/assets/svg/logo.svg';
+import signup from '@/assets/png/rafiki.png';
+import icons from '@/assets/png/signupIcons.png';
+import signupImg from '@/assets/png/background.png';
 const SignUp = () => {
   const [form, setForm] = useState({
     name: '',
@@ -218,15 +219,14 @@ const SignUp = () => {
               --------------- or sign up with ---------------{' '}
             </p>
 
-            <img
-              src={icons}
-              alt="icon"
-              className="w-44 mt-8 cursor-pointer"
-            />
+            <img src={icons} alt="icon" className="w-44 mt-8 cursor-pointer" />
           </div>
         </form>
       </div>
-      <div className="hidden lg:flex bg-[url(src/assets/png/background.png)] flex-col items-center justify-center w-[600px]  h-[700px] relative">
+      <div
+        style={{ backgroundImage: `url(${signupImg})` }}
+        className="hidden lg:flex flex-col items-center justify-center w-[600px]  h-[700px] relative"
+      >
         <h1 className="absolute text-slate-50 text-6xl font-bold top-52 ">
           Welcome <br></br> To{' '}
           <span className="text-primary text-4xl">Infinity</span>

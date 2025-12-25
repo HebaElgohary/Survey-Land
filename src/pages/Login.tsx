@@ -2,8 +2,9 @@ import { Button } from '@/components/ui/button';
 import { NavLink } from 'react-router-dom';
 import { Eye, EyeOff, LockKeyhole, Mail, UserRound } from 'lucide-react';
 import { useState } from 'react';
-import rafiki from "@/assets/png/rafiki.png";
-import logo from "@/assets/svg/logo.svg"
+import rafiki from '@/assets/png/rafiki.png';
+import logo from '@/assets/svg/logo.svg';
+import bgImg from '@/assets/png/background.png';
 
 const Login = () => {
   const [form, setForm] = useState({
@@ -155,12 +156,15 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <div className="hidden lg:flex bg-[url(src/assets/png/background.png)] flex-col items-center justify-center w-[600px]  h-[700px] relative">
+      <div
+        style={{ backgroundImage: `url(${bgImg})` }}
+        className="hidden lg:flex flex-col items-center justify-center w-[600px]  h-[700px] relative"
+      >
         <h1 className="absolute text-slate-50 text-6xl font-bold top-52 ">
           Welcome <br></br> Back ...
         </h1>
         <img
-           src={rafiki}
+          src={rafiki}
           alt="rafiki image"
           className="absolute right-0 bottom-0 w-56"
         />
